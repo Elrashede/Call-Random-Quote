@@ -1,6 +1,5 @@
 import logo from './logo.svg';
 import './App.css';
-import quote from './component/quote';
 import axios, { all } from "axios";
 import { useEffect, useState } from "react";
 function App() {
