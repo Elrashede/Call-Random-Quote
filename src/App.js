@@ -7,7 +7,8 @@ function App() {
 
   const getQuote = () => {
      
-    axios.get(`http://localhost:5000/quote/random`)
+    axios.get(`http://localhost:5000/quote/random`,
+    { headers: {  'x-api-key': 'SHEBAK@2022' } })
       .then((response) => {
         console.log(response.data);
         setData(response.data)
